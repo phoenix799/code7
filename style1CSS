@@ -1,0 +1,30 @@
+.rcp1 {
+ background: transparent;
+ font:Magneto
+ font-size:16px;
+ }
+.tdbg {
+background:url(../images/bitlogo1.png);
+background-repeat:no-repeat;
+background-position:center;
+
+}
+.tdbgm {
+background:url(../images/modellogo1.png);
+background-repeat:no-repeat;
+background-position:center;
+
+}
+.btn1 {
+background-color:#006600;
+color:#FFFFFF;
+height:30px;
+width:160px;
+border-radius: 0px 0px 0px 0px;
+box-shadow: 0 0 10px #5CD053 ;
+cursor: pointer;
+}
+.btn1:hover
+{ background-color:#00CC33;
+color:#FFFFFF;
+box-shadow: 0 0 10px #00CC33;
