@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Model Club- Receipt</title>
+<link href="css/style1.css" rel="stylesheet" type="text/css">
+
+
+  <?php
+  include 'connection/connection.php';
+   session_start();
+   $rol=$_SESSION['roll'];
+  $result=mysql_query("select reg_no from reg_counter where roll=$rol",$con);
+	if(mysql_num_rows($result)>0)
+{
+  while($rows=mysql_fetch_array($result))
+  {
+   
+   $_SESSION['regid']=$rows[0];
+  }
+}
+else
+{
+$_SESSION['regid']=404;
+}
+
+   include 'barcode.php';
+   ?>
+</head>
+
+<body>
+
+<?php
+$sql="select * from reg_counter where roll=$rol";
+$result=mysql_query($sql,$con);
+if(mysql_num_rows($result)>0)
+{
+?>
+
+
+<table align="center" width="668px" border="1">
+<tr>
+<td colspan="2"  ><span style="font-size:30px"><strong>Model Club</strong>, BIT Sindri&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-size:22px"><strong>Fee Receipt</strong></span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Be Technical By Technique&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PARTICIPANT'S COPY)</td>
+</tr>
+<tr>
+<td colspan="2" align="center"><span style="font-size:22px; font:Magneto"><strong>Sandhaan 2k15</strong></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="abc.png" /></td>
+<tr>
+<td align="center" class="tdbg" width="268px" style="font-size:20px">Registration No : <br />Roll No : 
+<br />Name : <br />Branch : <br />Email Id : <br />Food Packets Received : <br />Folder Received : </td>
+<td align="left" class="tdbgm" width="400px" style="font-size:20px">
+
+<?php
+while($row=mysql_fetch_array($result))
+{
+?>
+SAND/2014/<?php echo $_SESSION['regid'];?>  <br />
+<?php echo $row['roll'];?> <br />
+<?php echo $row['name'];?><br />
+<?php echo $row['branch'];?> <br />
+<?php echo $row['email'];?><br />
+<br /><br />
+
+</td>
+<tr>
+<td colspan="2">Events : <strong><?php echo $row['events'];?></strong></td>
+</tr>
+<tr>
+<td colspan="2" align="left"><span style="font-size:16px"><br />Recieved With Thanks, A Sum of Rupees<strong> Rs <?php echo $row['reg_fee'];?></strong></span><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Auth. Signatory _________________</strong></td>
+<tr>
+<?php } ?>
+<td colspan="2" align="center"><span style="font-size:12px">Please preserve the receipt as it may be required to be produced as and when required.</span></td>
+<tr>
+</table>
+
+
+<?php } ?>
+
+<br />
+<div align="center">
+<button class="btn1" onClick="window.print();">
+                    <span>PRINT</span>
+</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html"><input type="button" value="HOME" class="btn1"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="newEntry.php"><input type="button" value="NEW ENTRY" class="btn1"/></a></div>
+<br />
+
+<?php
+$sql="select * from reg_counter where roll=$rol";
+$result=mysql_query($sql,$con);
+if(mysql_num_rows($result)>0)
+{
+?>
+
+
+<table align="center" width="668px" border="1">
+<tr>
+<td colspan="2"  ><span style="font-size:30px"><strong>Model Club</strong>, BIT Sindri&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</span><span style="font-size:22px"><strong>Fee Receipt</strong></span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Be Technical By Technique&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CO-ORDINATOR'S COPY)</td>
+</tr>
+<tr>
+<td colspan="2" align="center"><span style="font-size:24px; font:Magneto"><strong>Sandhaan 2k14</strong></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="abc.png" /></td>
+<tr>
+<td align="center" class="tdbg" width="268px" style="font-size:20px">Registration No : <br />Roll No : 
+<br />Name : <br />Branch : <br />Email Id : <br />Food Packets Received : <br />Folder Received : </td>
+<td align="left" class="tdbgm" width="400px" style="font-size:20px">
+
+<?php
+while($row=mysql_fetch_array($result))
+{
+?>
+SAND/2014/<?php echo $_SESSION['regid'];?>   <br />
+<?php echo $row['roll'];?> <br />
+<?php echo $row['name'];?><br />
+<?php echo $row['branch'];?> <br />
+<?php echo $row['email'];?><br />
+<br /><br />
+
+</td>
+<tr>
+<td colspan="2">Events : <strong><?php echo $row['events'];?></strong></td>
+</tr>
+<tr>
+<td colspan="2" align="left"><span style="font-size:16px"><br />Recieved With Thanks, A Sum of Rupees<strong> Rs <?php echo $row['reg_fee'];?></strong></span><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Auth. Signatory _________________</strong></td>
+<tr>
+<?php } ?>
+<td colspan="2" align="center"><span style="font-size:12px">Please preserve the receipt as it may be required to be produced as and when required.</span></td>
+<tr>
+</table>
+
+
+<?php }  session_destroy(); ?>
+
+
+</body>
+</html>
