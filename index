@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Model Club Registration Cell</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="page-out">
+<div class="page-in">
+<div class="page">
+<div class="main">
+<div class="header">
+<div class="header-top">
+<h1>Tech Fest <span>Registration Cell</span></h1>
+</div>
+<div class="header-bottom">
+<h2><strong>SANDHAAN 2k15</strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sharpen Thy Arrow</h2>
+</div>
+<div class="topmenu">
+<ul id="firstmenu">
+  <li style="background: transparent none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; padding-left: 0px;"><a href="index.html"><span>Home</span></a></li>
+  <li><a href="newEntry.php"><span>New&nbsp;Entry</span></a></li>
+  <li><a href="modient.php"><span>Modify&nbsp;Entry</span></a></li>
+  <li class= "secondmenu"><a href="#"><span>Show&nbsp;All</span></a>
+	<ul>
+		<li style="background: transparent none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; padding-left: 0px;"><a href="usage.php">Total Participants</a></li>
+		<li style="background: transparent none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; padding-left: 0px;"><a href="collection.php">Total Collection</a></li>
+		
+	</ul>  
+  </li>
+  <li><a href="duprcp.php"><span>Dublicate Receipt</span></a></li>
+  <li class= "secondmenu"><a href="#"><span>Leaderboard</span></a>
+  <ul>
+		<li style="background: transparent none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; padding-left: 0px;"><a href="leadentry.php">Update</a></li>
+		<li style="background: transparent none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; padding-left: 0px;"><a href="display_select_event.php">Display</a></li>
+		
+	</ul>  </li>
+
+</ul>
+</div>
+</div>
+<div class="content">
+<div class="content-left">
+<div class="row1">
+<h1 class="title">Welcome To <span>Our Registration Counter</span></h1>
+<p><strong>Sandhaan 2k13</strong> the much awaited event of Model club, the best in technological arena with multihued events, a range of fascinating phenomena, mind rattling and brain whirling models, robotics, management competitions, software competitions, technical paper presentation, quizzes and much more......</p>
+<p>&nbsp;</p>
+<p>So What are you waiting for, <strong>Register Now.. </strong></p>
+<ul class="list1">
+  <li><strong>Rs 40,</strong> for Participation in <strong>One Event.</strong></li>
+  <li><strong>Rs 70,</strong> for Participation in <strong>Two Events.</strong></li>
+  <li><strong>Rs 100,</strong> for Participation in <strong>More Than 3 Events.</strong></li>
+</ul>
+<p>
+<br>
+</p>
+</div>
+<div class="row2">
+<h2 class="subtitle">About <span>Us</span></h2>
+<p><strong>Model Club,</strong> being one of the oldest and indigenous technical club of B.I.T SINDRI, is a golden feather in the field of technical activity and provides a perfect launch pad for the students in the glorious cap of this institute. <br />The club looks after the extra-curricular for young budding and dynamic technocrats of<strong> BIT </strong>and other institutes like I.I.Ts, N.I.Ts, etc across the country to dream, think, discover and innovate.<strong> Model club</strong>, having strong existence in the campus with around 60 dedicated members; 15 belonging to each year, apprises the young technocrats, thereby giving a citadel to them to reveal their potential in the field of science and technology.</p>
+<p>&nbsp;</p>
+<p><strong>Since its establishment in early 1960's, Model club </strong>is continuously growing and has never looked behind. <strong>"SANDHAAN"</strong>, the much awaited event of Model club have been the showcase for the best in technological arena with multihued events, a range of fascinating phenomena,<strong> mind rattling and brain whirling models, robotics, management competitions, software competitions, technical paper presentation, quizzes</strong> and much more.....</p>
+<p>&nbsp;</p>
+<p align="right"><a href="#" class="more">Read More</a></p>
+</div>
+</div>
+<div class="content-right">
+<div class="mainmenu">
+<h2 class="sidebar1">Participation Categories</h2>
+<ul>
+  <li><a href="usage.php">All</a></li>
+  <li><a href="usageTOM.php">Track-O-Mania</a></li>
+  <li><a href="usageADoz.php">Aqua Doz</a></li>
+  <li><a href="usageArmDon.php">Armageddon</a></li>
+  <li><a href="usageWebCraft.php">Web-Craft</a></li>
+  <li><a href="usageMidnCoders.php">Midnight Coders</a></li>
+  <li><a href="usageCS.php">Counter Strike</a></li>
+  <li><a href="usageNFS.php">Need For Speed</a></li>
+  <li><a href="usageScientica.php">Scientica</a></li>
+  <li><a href="usagePP.php">Paper Presentation</a></li>
+</ul>
+</div>
+<div class="contact">
+<h2 class="sidebar2">Contact</h2>
+<div class="contact-detail">
+<p class="green"><strong>In Case Of Any Queries, Please Contact:-</strong></p>
+<p><strong>Adress :</strong> Model Club<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-49, Electrical Building</p>
+<p><strong>E-mail :</strong> &nbsp;&nbsp;&nbsp;model.bitsindri@gmail.com</p>
+<p><strong>Phone :</strong> &nbsp;&nbsp;&nbsp;9122645599(Prabhat-CSE 2k11)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7870648265(Vineet-Mechanical 2k11)</p>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<!--DO NOT Remove The Footer Links-->
+<p>&copy; Copyright 2015. Designed by <a target="_blank"
+ href="http://www.facebook.com/prabhats97">CSE 2k11</a><br>
+<a href="http://www.facebook.com/prabhats97"></a>
+<a href="http://www.facebook.com/prabhats97"></a></p>
+<ul>
+  <li style="border-left: medium none;"><a href="index.html"><span>Home</span></a></li>
+  <li><a href="newEntry.php"><span>New&nbsp;Entry</span></a></li>
+  <li><a href="modient.php"><span>Modify&nbsp;Entry</span></a></li>
+  <li><a href="usage.php"><span>Show All</span></a></li>
+  <li><a href="duprcp.php"><span>Dublicate Receipt</span></a></li>
+  <li style="padding-right: 0px;"><a href="#"><span>Contact Us</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
