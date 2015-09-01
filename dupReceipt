@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Model Club- Duplicate Receipt</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/shop.css" rel="stylesheet" type="text/css">
+  <?php
+  include 'connection/connection.php';
+ 
+  ?>
+</head>
+<body>
+<div class="page-out">
+<div class="page-in">
+<div class="page">
+<div class="main">
+<div class="header">
+<div class="header-top">
+<h1>Tech Fest <span>Registration Cell</span></h1>
+</div>
+<div class="header-bottom">
+<h2><strong>SANDHAAN 2k15</strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sharpen Thy Arrow</h2>
+</div>
+<div class="topmenu">
+<ul id="firstmenu">
+  <li style="background: transparent none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; padding-left: 0px;"><a href="index.html"><span>Home</span></a></li>
+  <li><a href="newEntry.php"><span>New&nbsp;Entry</span></a></li>
+  <li><a href="modient.php"><span>Modify&nbsp;Entry</span></a></li>
+  <li class= "secondmenu"><a href="#"><span>Show&nbsp;All</span></a>
+	<ul>
+		<li style="background: transparent none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; padding-left: 0px;"><a href="usage.php">Total Participants</a></li>
+		<li style="background: transparent none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; padding-left: 0px;"><a href="collection.php">Total Collection</a></li>
+		
+	</ul>  
+  </li>
+  <li><a href="duprcp.php"><span>Dublicate Receipt</span></a></li>
+  <li class= "secondmenu"><a href="#"><span>Leaderboard</span></a>
+  <ul>
+		<li style="background: transparent none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; padding-left: 0px;"><a href="leadentry.php">Update</a></li>
+		<li style="background: transparent none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; padding-left: 0px;"><a href="display_select_event.php">Display</a></li>
+		
+	</ul>  </li>
+
+</ul>
+</div>
+</div>
+<div class="content">
+
+<div class="row1">
+<h1 class="title">Duplicate <span>Receipt</span></h1>
+<div style="display: block" class="customer-info-outer tabcontent" id="customer-info">
+                <form id="customer-info-form" class="contact_form" action="dupreceipt.php" method="post">
+                    <div class="clear"></div>
+                    <div class="customer-info">
+                        <div style="text-align: left; padding-left: 50px;" class="customer-heading-text">Participant's Details</div>
+                       
+                        <div>
+                            <label>Enter Roll No : <span class="require">*</span> </label> <input type="text" required="" name="roll" class="inputbox2 valid">
+                        </div>
+						
+                       </div>
+            </div>
+</div>
+
+
+ 
+<div align="center">
+                            <br /><br /><br /><br />
+                            <input type="submit" value="GO" class="btn" />
+                        </div>
+                   
+                </form>
+</div>
+</div>
+
+<div class="footer">
+
+<p>&copy; Copyright 2014. Designed by <a target="_blank"
+ href="http://www.facebook.com/prabhats97">Prabhat Kr Singh(CSE 2k11)</a><br>
+<a href="http://www.facebook.com/prabhats97"></a>
+<a href="http://www.facebook.com/prabhats97"></a></p>
+<ul>
+ <li style="border-left: medium none;"><a href="index.html"><span>Home</span></a></li>
+  <li><a href="newEntry.php"><span>New&nbsp;Entry</span></a></li>
+  <li><a href="modient.php"><span>Modify&nbsp;Entry</span></a></li>
+  <li><a href="usage.php"><span>Show All</span></a></li>
+  <li><a href="duprcp.php"><span>Dublicate Receipt</span></a></li>
+  <li style="padding-right: 0px;"><a href="#"><span>Contact Us</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+</body>
+</html>
