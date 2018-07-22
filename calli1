@@ -29,13 +29,12 @@ public class Test1 {
 					splited = tempArr.split("\\s+");
 					lrarr = Arrays.stream(splited).mapToInt(Integer::parseInt).toArray();
 					for(int i = lrarr[0]-1; i < lrarr[1]; i++) {						
-						count = 0;						
-						findCount(arr[i]);
-						if(arr[i] % count == 0) {
+						if(arr[i]% 2 == 0) {
 							old++;
 						}else {
 							cold++;
-						}						
+						}
+									
 					}
 					if(old >= cold) {
 						System.out.println("0");
@@ -50,9 +49,7 @@ public class Test1 {
 			}
 		}catch(Exception e) {
 			
-		}
-		
-		
+		}		
 
 	}
 	static int findCount(int number){
