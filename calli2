@@ -1,0 +1,36 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.Arrays;
+
+public class calli2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+			BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+			String tempArr = bf.readLine();
+			String[] splited = tempArr.split("\\s+");
+			int[] xy = Arrays.stream(splited).mapToInt(Integer::parseInt).toArray();
+			int x = xy[0];
+			int y = xy[1];
+			int t = 1;
+			int largest = Integer.parseInt(bf.readLine());
+			int nmbr, index = 1;
+			while(t < x) {
+				nmbr = Integer.parseInt(bf.readLine());
+				if(nmbr > largest) {
+					largest = nmbr;
+					index = t + 1;
+				}				
+				t++;
+			}
+			System.out.println(index);
+			
+		}catch(Exception e) {
+			
+		}
+		
+
+	}
+
+}
