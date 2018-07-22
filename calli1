@@ -1,0 +1,62 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.Arrays;
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+			BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));			
+			int t, n, queries, l, r, number,count=0;
+			String tempArr;
+			int[] arr;
+			int[] lrarr;
+			String[] splited;
+			t = Integer.parseInt(bf.readLine());
+			int old, cold;
+			while(t > 0) {
+				n = Integer.parseInt(bf.readLine());
+				tempArr = bf.readLine();
+				splited = tempArr.split("\\s+");
+				arr = Arrays.stream(splited).mapToInt(Integer::parseInt).toArray();
+				queries = Integer.parseInt(bf.readLine());
+				
+				while(queries > 0) {
+					old = 0;
+					cold = 0;
+					tempArr = bf.readLine();
+					splited = tempArr.split("\\s+");
+					lrarr = Arrays.stream(splited).mapToInt(Integer::parseInt).toArray();
+					for(int i = lrarr[0]-1; i < lrarr[1]; i++) {						
+						count = 0;
+						number = arr[i];
+						for(int j = 1; j <= number; j++) {
+							if(j % 2 != 0) {
+								count++;
+							}
+						}
+						if(number % count == 0) {
+							old++;
+						}else {
+							cold++;
+						}						
+					}
+					if(old >= cold) {
+						System.out.println("0");
+					}else {
+						System.out.println(cold - old);
+					}
+					
+					queries--;
+				}
+				
+				t--;
+			}
+		}catch(Exception e) {
+			
+		}		
+
+	}
+
+}
