@@ -13,7 +13,7 @@ public class unit {
 			String[][] eachUnits = new String[units.length-1][3];
 			String eachUnitString, longStr = "";
 			String findStr;
-			int pos = 0;
+			int pos = 0, product = 1;
 			for(int i = eachUnits.length - 1; i >= 0 ; i--) {
 				eachUnitString = bf.readLine();
 				longStr = longStr + eachUnitString;
@@ -27,17 +27,20 @@ public class unit {
 				if(((longStr.split(findStr, -1).length-1)) == 1){
 					System.out.print("1" + findStr + " = " + eachUnits[i][1] + eachUnits[i][2]);
 					pos = i;
+					product = Integer.parseInt(eachUnits[i][1]);
 					break;
 				}
 			}
 			for(int i = eachUnits.length - 1; i >= 0 ; i--) {
 				if(eachUnits[pos][2].equals(eachUnits[i][0])) {
-					System.out.print(" = " + eachUnits[i][1] + eachUnits[i][2]);
+					product = product * Integer.parseInt(eachUnits[i][1]);
+					System.out.print(" = " + product + eachUnits[i][2]);
+					pos = i;
 				}
 			}
 			
 		}catch(Exception e) {
-			System.out.println("check");
+			
 			
 		}
 
